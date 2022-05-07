@@ -8,21 +8,47 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <div class=".js-block"><p>Block</p>
-        <div class=".js-block__inner"><p>Inner block</p>
-            <div class=".js-block__inner-inner">
-                <p>Inner-inner block</p>
-            </div>
+        <div class="wrapper">
+            <h1 class="title"><span class="lesson">JavaScript</span> события</h1>
+            <p class="text">Lesson №15</p>
+<!-- 
+            <div class="js-block">Block
+                <div class="js-block__inner">Inner block
+                    <div class="js-block__inner-inner">Inner-inner block
+
+                    </div>
+                </div>
+            </div> -->
+            <!-- <button class="js-button-click" type="button">Click on me</button>
+            <button class="js-button-click" type="button">And on me</button>
+            <button class="js-button-click" type="button">And on me</button>
+            <button class="js-button-click" type="button">And on me</button> -->
+         
+                <nav class="menu">
+                    <button type="button" class="menu__button"> 
+                        <span>Открыть меню</span>
+                        <span>Закрыть меню</span>
+                    </button>
+                    <ul hidden class="menu__list">
+                        <li><a href="" class="menu__link">Пункт 1</a></li>
+                        <li><a href="" class="menu__link">Пункт 2</a></li>
+                        <li><a href="" class="menu__link">Пункт 3</a></li>
+                        <li><a href="" class="menu__link">Пункт 4</a></li>
+                    </ul>
+                </nav>
+
+
+
+
         </div>
-    </div>
-    
-    
-    
+        
 
 
     <!-- <button class="js-button" type="button"><span>Button</span></button> -->
 
 
     <script src="/JS/01-button.js" type="module"></script>
+    <!-- <script src="/JS/02-capture_phase.js" type="module"></script> -->
+    <script src="/JS/03-menu.js"></script>
 </body>
 </html>

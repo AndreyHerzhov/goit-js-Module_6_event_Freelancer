@@ -3,7 +3,7 @@
  */
 
 
-const button = document.querySelector('.js-button')
+// const button = document.querySelector('.js-button')
 
 // button.onclick = function() {
 //     console.log('click') // проигнорирует 
@@ -69,19 +69,51 @@ const button = document.querySelector('.js-button')
  *  Объект события
  */
 
-function showConsole(event) {
-    // Тип события
-    console.log(event.type)
-    // Объект на котором сработал обработчик
-    console.log(event.target)
-    // Объект к которому назначен обработчик
-    console.log(event.currentTarget)
-    // Положение курсора по оси Х
-    console.log(event.clientX)
-    // Положение курсора по оси У
-    console.log(event.clientY)
+// function showConsole(event) {
+//     // Тип события
+//     console.log(event.type)
+//     // Объект на котором сработал обработчик
+//     console.log(event.target)
+//     // Объект к которому назначен обработчик
+//     console.log(event.currentTarget)
+//     // Положение курсора по оси Х
+//     console.log(event.clientX)
+//     // Положение курсора по оси У
+//     console.log(event.clientY)
+// }
+
+// button.addEventListener('click', showConsole)
+// button.addEventListener('mouseenter', showConsole)
+// button.addEventListener('mouseleave', showConsole)
+
+
+
+/*
+ *
+ *  Делегирование событий
+ * 
+ */
+
+
+// const buttonClick = document.querySelectorAll('.js-button-click')
+
+// function showConsole() {
+//     console.log('Ura')
+// }
+
+// buttonClick.forEach(buttonItem => {
+//     buttonItem.addEventListener('click', showConsole)
+// })
+
+
+const wrapper = document.querySelector('.wrapper')
+
+function showConsole() {
+    console.log('Ura')
 }
 
-button.addEventListener('click', showConsole)
-button.addEventListener('mouseenter', showConsole)
-button.addEventListener('mouseleave', showConsole)
+wrapper.addEventListener('click', function(event) {
+    if (event.target.closest('.js-button-click')) {
+        showConsole()
+    }
+});
