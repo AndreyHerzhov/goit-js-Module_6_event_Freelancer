@@ -1,0 +1,30 @@
+.js-button {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.js-button:hover {
+    box-shadow: 20px;
+    background-color: blue;
+    
+}
+
+.js-block {
+    display: flex;
+    padding: 300px;
+    background-color: brown;
+    color: black;
+    border: solid 1px black;
+}
+
+.js-block-text {
+    margin: 20px;
+}
